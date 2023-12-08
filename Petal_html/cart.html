@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Petal Palace - Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../Petal_css/cart.css">
+    <style>
+        /* Additional styling for animations */
+        @keyframes fade-in {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .fade-in {
+            animation: fade-in 0.5s ease;
+        }
+
+        .fade-out {
+            animation: fade-in 0.5s ease reverse;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img id="logo" src="../assets/Logo.png" height="60px" width="100px">
+        <a id="head" href="SignUpPage1.html">Sign up</a>
+        <a id="head" href="index1.html">Home</a>
+        <a id="head" href="products.html">Product</a>
+        <a id="head" href="cart.html">My cart</a>
+        <a id="head" href="contact.html">Contact Us</a>
+        <a id="head" href="about_us.html">About Us</a>
+        <a id="head" href="past.html">Past orders</a>
+          <input placeholder="search flower">
+          <button id="search">Search</button>
+    </header>
+    
+    <div class="cart">
+        <div class="container">
+            <h1>Your Shopping Cart</h1>
+            <div class="cart-items">
+                <!-- Cart item 1 -->
+                <div class="cart-item fade-in">
+                    <div class="cart-item-img">
+                        <img src="../assets/product_1.jpg" alt="product image">
+                    </div>
+                    <div class="cart-item-info">
+                        <h2 class="cart-item-name">Dreaming of Tuscany</h2>
+                        <p class="cart-item-price">&#8377; 1650</p>
+                    </div>
+                    <div class="cart-item-quantity">
+                        <input type="number" min="1" value="1">
+                    </div>
+                    <div class="cart-item-total">
+                        &#8377; 1650
+                    </div>
+                    <div class="cart-item-remove">
+                        <button type="button" class="btn-remove">Remove</button>
+                    </div>
+                </div>
+
+                <!-- Cart item 2 -->
+                <div class="cart-item fade-in">
+                    <div class="cart-item-img">
+                        <img src="../assets/product_2.jpg" alt="product image">
+                    </div>
+                    <div class="cart-item-info">
+                        <h2 class="cart-item-name">My Sun, Moon and Stars</h2>
+                        <p class="cart-item-price">&#8377; 2470</p>
+                    </div>
+                    <div class="cart-item-quantity">
+                        <input type="number" min="1" value="1">
+                    </div>
+                    <div class="cart-item-total">
+                        &#8377; 2470
+                    </div>
+                    <div class="cart-item-remove">
+                        <button type="button" class="btn-remove">Remove</button>
+                    </div>
+                </div>
+
+                <!-- Cart item 3 -->
+                <div class="cart-item fade-in">
+                    <div class="cart-item-img">
+                        <img src="../assets/product_3.jpg" alt="product image">
+                    </div>
+                    <div class="cart-item-info">
+                        <h2 class="cart-item-name">Floral Harmony Bouquet</h2>
+                        <p class="cart-item-price">&#8377; 3300</p>
+                    </div>
+                    <div class="cart-item-quantity">
+                        <input type="number" min="1" value="1">
+                    </div>
+                    <div class="cart-item-total">
+                        &#8377; 3300
+                    </div>
+                    <div class="cart-item-remove">
+                        <button type="button" class="btn-remove">Remove</button>
+                    </div>
+                </div>
+
+                <!-- Cart item 4 -->
+                <div class="cart-item fade-in">
+                    <div class="cart-item-img">
+                        <img src="../assets/product_4.jpg" alt="product image">
+                    </div>
+                    <div class="cart-item-info">
+                        <h2 class="cart-item-name">She's Got Style, She's Got Grace</h2>
+                        <p class="cart-item-price">&#8377; 4120</p>
+                    </div>
+                    <div class="cart-item-quantity">
+                        <input type="number" min="1" value="1">
+                    </div>
+                    <div class="cart-item-total">
+                        &#8377; 4120
+                    </div>
+                    <div class="cart-item-remove">
+                        <button type="button" class="btn-remove">Remove</button>
+                    </div>
+                </div>
+
+                <div class="cart-buttons fade-in">
+                    <button type="button" class="btn-add-more"><a id="more" href="products.html">Add More Items</a></button>
+                    <button type="button" class="btn-proceed-buy"><a id="more" href="CheckOut1.html">Proceed to Buy</a></button>
+                </div>
+
+                <!-- Grand total -->
+                <div class="cart-total fade-in">
+                    <h2 class="cart-total-heading">Cart Total:</h2>
+                    <p class="cart-total-price">&#8377; 11540</p>
+                </div>
+
+                <!-- Additional details -->
+                <div class="cart-details fade-in">
+                    <div class="cart-taxes">
+                        <p class="cart-taxes-text">Taxes: + &#8377; 1140</p>
+                    </div>
+                    <div class="cart-discount">
+                        <p class="cart-discount-text">Discount: - &#8377; 300</p>
+                    </div>
+                    <div class="cart-grand-total">
+                        <h2 class="cart-grand-total-heading">Grand Total:</h2>
+                        <p class="cart-grand-total-price">&#8377; 10380</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-col">
+          <h4>Company</h4>
+            <a id="foot" href="about_us.html">About Us</a>
+            <br>
+            <a id="foot" href="#">Our Services</a>
+            <br>
+            <a id="foot" href="#">Privacy</a>
+            <br>
+            <a id="foot" href="#">Programs</a>
+        </div>
+        <div class="footer-col">
+          <h4>Get Help</h4>
+            <a id="foot"a href="index1.html">FAQ</a>
+            <br>
+            <a id="foot" href="#">Shipping</a>
+            <br>
+            <a id="foot" href="contact.html">Return</a>
+            <br>
+            <a id="foot" href="CheckOut1.html">Payment</a>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+            <a id="foot" href="#">Roses</a>
+            <br>
+            <a id="foot" href="#">Lotus</a>
+            <br>
+            <a id="foot" href="#">Flowera</a>
+            <br>
+            <a id="foot" href="#">Bouquet</a>
+        </div>
+</footer>        
+    
+</body>
+</html>
